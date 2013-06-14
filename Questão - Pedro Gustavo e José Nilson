@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class produtos {
+  public static void main(String[] args) {
+		Map<Double, String> produtos = new HashMap<Double, String>();
+		
+		produtos.put(2.70, "AÇUCAR");
+		produtos.put(1.50, "LEITE");
+		produtos.put(5.60, "FEIJAO");
+		produtos.put(0.75, "SAL");
+		
+		System.out.println(produtos);
+		
+		produtos.put(2.30, "QUEIJO");
+		produtos.put(20.0, "FRANGO");
+		
+		System.out.println (produtos.keySet());
+		
+		for (Double chave : produtos.keySet()) {
+			System.out.println(chave+"-"+produtos.get(chave));
+		}
+
+		System.out.println(produtos.values());
+		
+		System.out.println(produtos.size());
+		
+
+	}
+
+}
